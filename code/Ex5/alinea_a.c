@@ -133,10 +133,14 @@ double findMin(double myarr[])
 
 
 int main(int argc, char *argv[])
-{
+{   
+    if ( argc < 2) {
+      printf( "Insira o numero de vezes para o loop\n" );
+      exit(-1);
+    }
+
     if(N % BS != 0){
         fprintf(stderr,"[ERROR] N is not multiple of BS: %d %% %d = %d\n", N,BS,N%BS);
-        exit(1);
     }
     srand(time(NULL));
     //Fill A and B with random ints
@@ -151,10 +155,6 @@ int main(int argc, char *argv[])
      //save correct result in global variable 'correct_M'
     setup_correct_M();
 
-    if ( argc < 1) {
-      printf( "Insira o numero de vezes para o loop\n" );
-      exit( -1 );
-    }
     NumVezes = atoi(argv[1]); 
     double times[NumVezes]; 
 

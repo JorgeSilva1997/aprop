@@ -4,6 +4,11 @@
 
 <br>
 
+## ℹ️  Info
+ [Technical Report](https://www.google.com)<br>
+
+<br>
+
 ## 🤝 Collaborators
   * Miguel Oliveira - 1210445
   * Jorge Silva - 1210443
